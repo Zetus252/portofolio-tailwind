@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="min-h-[100000px]">
+<html class="min-h-[9999px] scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,6 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="bg-[rgba(230,230,230,1)]">
     <!-- Navbar -->
@@ -30,8 +31,9 @@
         <!-- Menu -->
         <div class="flex space-x-12 text-xl font-[Inter] font-semibold">
           <a href="#" class="hover:text-red-800">Home</a>
-          <a href="#" class="hover:text-red-800">About</a>
-          <a href="#" class="hover:text-red-800">Project</a>
+          <a href="#about" class="hover:text-red-800">About</a>
+          <a href="#skills" class="hover:text-red-800">Skills</a>
+          <a href="#projects" class="hover:text-red-800">Project</a>
           <a href="#" class="hover:text-red-800">Certificate</a>
         </div>
       </div>
@@ -39,11 +41,144 @@
     <!-- Navbar end -->
 
     <!-- Hero -->
-     <div class="flex flex-col pt-60" id="hero">
+    <div class="flex flex-col pt-60" id="hero">
       <p class="mx-auto text-lg font-[Inter] mb-1">Hello, i am</p>
-      <h1 class="mx-auto text-6xl font-[Inter] font-bold text-black tracking-in-contract-bck">Farrel Satya Kurniawan</h1>
+      <h1
+        class="mx-auto text-6xl font-[Inter] font-bold text-black tracking-in-contract-bck"
+      >
+        Farrel Satya Kurniawan
+      </h1>
       <p class="mx-auto mt-6">Student | Tech Enthusiast</p>
-      <button class="mx-auto bg-black text-white p-3 rounded-2xl text-xl mt-6 font-[Inter] font-bold">Who am i</button>
+      <a
+        class="mx-auto bg-black text-white p-3 rounded-2xl text-xl mt-6 font-[Inter] font-bold hover:bg-gray-900"
+        href="#about"
+      >
+        Who am i
+      </a>
+    </div>
+    <!-- Hero end -->
+
+    <!-- About -->
+    <div class="flex flex-col mt-96" id="about">
+      <h1 class="text-5xl font-bold mx-auto mt-10 font-[Inter]">About me</h1>
+      <p class="text-center mx-auto mt-10 w-4xl">
+        I'm an 11th-grade student interested in IT and currently studying web
+        development and network administration. I'm currently focused on
+        learning HTML, CSS, and JavaScript to develop modern and interactive
+        websites. My dream is to become a professional web developer and help
+        people with their digital work.
+      </p>
+      <img
+        src="/farrel1.jpg"
+        alt=""
+        width="350px"
+        class="mx-auto mt-10 rounded-2xl shadow-lg"
+      />
+    </div>
+    <!-- About end -->
+
+    <!-- My Skills -->
+    <div class="flex mt-96" id="skills">
+      <h1 class="font-bold mx-auto font-[Inter] text-5xl mt-10">My Skills</h1>
+    </div>
+    <div
+      class="bg-white w-11/12 mx-auto mt-10 rounded-2xl font-[Inter] shadow-xl"
+    >
+      <div class="grid grid-cols-3 grid-rows-2 gap-4">
+        <div class="mx-auto p-10" data-aos="flip-left" data-aos-delay="200">
+          <img
+            src="/skill/HTML-5-Badge-Logo.webp"
+            width="100px"
+            class="mx-auto"
+            alt=""
+          />
+          <h2 class="font-bold mx-auto text-center text-3xl mt-4">HTML</h2>
+          <p class="text-center mt-4">
+            I use HTML as the main foundation for building website structures.
+            With HTML, I can organize page elements such as text, images,
+            buttons, and forms neatly, ensuring that the website is
+            well-understood by both browsers and users.
+          </p>
+        </div>
+        <div class="mx-auto p-10" data-aos="flip-left" data-aos-delay="400"">
+          <img
+            src="/skill/css-removebg-preview.webp"
+            width="100px"
+            class="mx-auto"
+            alt=""
+          />
+          <h2 class="font-bold mx-auto text-center text-3xl mt-4">CSS</h2>
+          <p class="text-center mt-4">
+            CSS allows me to transform a plain structure into a visually
+            appealing design. I use it to control colors, sizes, layouts, and
+            animations, making the website look modern, responsive, and
+            comfortable to view on any device.
+          </p>
+        </div>
+        <div class="mx-auto p-10" data-aos="flip-left" data-aos-delay="600"">
+          <img src="/skill/js.webp" width="100px" class="mx-auto" />
+          <h2 class="font-bold mx-auto text-center text-3xl mt-4">
+            JavaScript
+          </h2>
+          <p class="text-center mt-4">
+            JavaScript helps me bring websites to life with interactivity and
+            dynamic behavior. I use it to add visual effects, form validations,
+            and logical features that make the user experience more engaging and
+            enjoyable.
+          </p>
+        </div>
+        <div class="mx-auto p-10" data-aos="flip-left" data-aos-delay="800">
+          <img src="/skill/unity.webp" width="100px" class="mx-auto" />
+          <h2 class="font-bold mx-auto text-center text-3xl mt-4">Unity</h2>
+          <p class="text-center mt-4">
+            I'm currently learning game development using Unity, focusing on
+            creating simple 2D games. One of my first projects is a Flappy
+            Bird–style game, where I’ve learned about game physics, collisions,
+            and basic scripting. Through this, I’m starting to understand how
+            game mechanics and design come together to create a fun player
+            experience.
+          </p>
+        </div>
+        <div class="mx-auto p-10" data-aos="flip-left" data-aos-delay="1000">
+          <img src="/skill/python.webp" width="100px" class="mx-auto" />
+          <h2 class="font-bold mx-auto text-center text-3xl mt-4">Python</h2>
+          <p class="text-center mt-4">
+            Python is a versatile language I use for backend logic, data
+            analysis, and automation. Its clean and simple syntax makes it
+            easier for me to understand advanced programming concepts and apply
+            them effectively in projects.
+          </p>
+        </div>
+        <div class="mx-auto p-10" data-aos="flip-left" data-aos-delay="1200">
+          <img
+            src="/skill/tailwind-removebg-preview.webp"
+            width="100px"
+            alt=""
+            class="mx-auto"
+          />
+          <h2 class="font-bold mx-auto text-center text-3xl mt-4">
+            TailwindCSS
+          </h2>
+          <p class="text-center mt-4">
+            I love using Tailwind CSS because it makes designing fast,
+            consistent, and flexible without writing too much custom CSS. With
+            its utility-first classes, I can build responsive and aesthetic
+            layouts efficiently.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- My Skills end -->
+
+    <!-- Project -->
+     <div class="flex mt-96" id="projects">
+      <h1 class="font-bold mx-auto font-[Inter] text-5xl mt-10">Projects</h1>
      </div>
+
+    <!-- Javascript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
