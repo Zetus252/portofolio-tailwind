@@ -2,7 +2,10 @@
 <html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
     <link href="./output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,15 +30,19 @@
   <body class="bg-[rgba(230,230,230,1)]">
     <!-- Hero -->
     <div class="flex flex-col pt-60" id="hero">
-      <p class="mx-auto text-base font-[Inter] mb-1">Hello, i am</p>
+      <p class="mx-auto text-xs md:text-sm lg:text-base font-[Inter] mb-1">
+        Hello, i am
+      </p>
       <h1
-        class="mx-auto text-5xl font-[Inter] font-bold text-black tracking-in-contract-bck"
+        class="mx-auto text-2xl md:text-4xl lg:text-5xl font-[Inter] font-bold text-black fade-in"
       >
         Farrel Satya Kurniawan
       </h1>
-      <p class="mx-auto mt-6 text-base">Student | Tech Enthusiast</p>
+      <p class="mx-auto mt-6 text-xs md:text-sm lg:text-base">
+        Student | Tech Enthusiast
+      </p>
       <a
-        class="mx-auto bg-black text-white p-3 rounded-2xl text-l mt-6 font-[Inter] font-bold hover:bg-gray-900"
+        class="mx-auto bg-black text-white p-3 rounded-2xl text-xs md:text-sm lg:text-base mt-6 font-[Inter] font-bold hover:bg-gray-900"
         href="#about"
       >
         Who am i
@@ -45,77 +52,119 @@
 
     <!-- About -->
     <div class="flex flex-col mt-96" id="about">
-      <h1 class="text-4xl font-bold mx-auto mt-10 font-[Inter]">About me</h1>
-      <p class="text-center mx-auto mt-10 w-4xl">
+      <h1
+        class="text-2xl md:text-3xl lg:text-4xl font-bold mx-auto mt-10 font-[Inter]"
+      >
+        About me
+      </h1>
+      <p class="text-center mx-auto mt-4 max-w-4xl">
         I'm an 11th-grade student interested in IT and currently studying web
         development and network administration. I'm currently focused on
-        learning HTML, CSS, and JavaScript to develop modern and interactive
-        websites. My dream is to become a professional web developer and help
-        people with their digital work.
+        learning about Web Development and Game Development. My dream is to
+        become a professional web developer and help people with their digital
+        work.
       </p>
       <img
         src="farrel1.jpg"
         alt=""
-        width="300px"
-        class="mx-auto mt-10 rounded-2xl shadow-lg"
+        class="mx-auto mt-10 rounded-2xl shadow-lg max-w-56 md:max-w-64 lg:max-w-72"
       />
     </div>
     <!-- About end -->
 
     <!-- My Skills -->
     <div class="flex mt-96" id="skills">
-      <h1 class="font-bold mx-auto font-[Inter] text-4xl mt-10">My Skills</h1>
+      <h1
+        class="font-bold mx-auto font-[Inter] text-2xl md:text-3xl lg:text-4xl mt-10"
+      >
+        My Skills
+      </h1>
     </div>
+
     <div
       class="bg-white w-11/12 mx-auto mt-10 rounded-2xl font-[Inter] shadow-xl"
     >
-      <div class="grid grid-cols-3 grid-rows-2 gap-4">
-        <div class="mx-auto p-10" data-aos="flip-left" data-aos-delay="200">
+      <div class="grid grid-cols-3 grid-rows-2 gap-4 p-4">
+        <div
+          class="aspect-square flex flex-col items-center justify-center p-3"
+          data-aos="flip-left"
+          data-aos-delay="200"
+        >
           <img
             src="skill/HTML-5-Badge-Logo.webp"
-            width="80px"
-            class="mx-auto"
+            class="w-12 h-12 lg:w-20 lg:h-20 object-contain"
             alt=""
           />
-          <h2 class="font-bold mx-auto text-center text-3xl mt-4">HTML</h2>
-          <p class="text-center mt-4">
+          <h2
+            class="font-bold text-center text-sm md:text-base lg:text-2xl mt-3"
+          >
+            HTML
+          </h2>
+          <p class="text-center mt-3 hidden lg:block text-sm">
             I use HTML as the main foundation for building website structures.
             With HTML, I can organize page elements such as text, images,
             buttons, and forms neatly, ensuring that the website is
             well-understood by both browsers and users.
           </p>
         </div>
-        <div class="mx-auto p-10" data-aos="flip-left" data-aos-delay="400">
+        <div
+          class="aspect-square flex flex-col items-center justify-center p-3"
+          data-aos="flip-left"
+          data-aos-delay="400"
+        >
           <img
             src="skill/css-removebg-preview.webp"
-            width="80px"
-            class="mx-auto"
+            class="w-12 h-12 lg:w-20 lg:h-20 object-contain"
             alt=""
           />
-          <h2 class="font-bold mx-auto text-center text-3xl mt-4">CSS</h2>
-          <p class="text-center mt-4">
+          <h2
+            class="font-bold text-center text-sm md:text-base lg:text-2xl mt-3"
+          >
+            CSS
+          </h2>
+          <p class="text-center mt-3 hidden lg:block text-sm">
             CSS allows me to transform a plain structure into a visually
             appealing design. I use it to control colors, sizes, layouts, and
             animations, making the website look modern, responsive, and
             comfortable to view on any device.
           </p>
         </div>
-        <div class="mx-auto p-10" data-aos="flip-left" data-aos-delay="600">
-          <img src="skill/js.webp" width="80px" class="mx-auto" />
-          <h2 class="font-bold mx-auto text-center text-3xl mt-4">
+        <div
+          class="aspect-square flex flex-col items-center justify-center p-3"
+          data-aos="flip-left"
+          data-aos-delay="600"
+        >
+          <img
+            src="skill/js.webp"
+            class="w-12 h-12 lg:w-20 lg:h-20 object-contain"
+          />
+          <h2
+            class="font-bold text-center text-sm md:text-base lg:text-2xl mt-3"
+          >
             JavaScript
           </h2>
-          <p class="text-center mt-4">
+          <p class="text-center mt-3 hidden lg:block text-sm">
             JavaScript helps me bring websites to life with interactivity and
             dynamic behavior. I use it to add visual effects, form validations,
             and logical features that make the user experience more engaging and
             enjoyable.
           </p>
         </div>
-        <div class="mx-auto p-10" data-aos="flip-left" data-aos-delay="800">
-          <img src="skill/unity.webp" width="80px" class="mx-auto" />
-          <h2 class="font-bold mx-auto text-center text-3xl mt-4">Unity</h2>
-          <p class="text-center mt-4">
+        <div
+          class="aspect-square flex flex-col items-center justify-center p-3"
+          data-aos="flip-left"
+          data-aos-delay="800"
+        >
+          <img
+            src="skill/unity.webp"
+            class="w-12 h-12 lg:w-20 lg:h-20 object-contain"
+          />
+          <h2
+            class="font-bold text-center text-sm md:text-base lg:text-2xl mt-3"
+          >
+            Unity
+          </h2>
+          <p class="text-center mt-3 hidden lg:block text-sm">
             I'm currently learning game development using Unity, focusing on
             creating simple 2D games. One of my first projects is a Flappy
             Bird–style game, where I’ve learned about game physics, collisions,
@@ -124,27 +173,43 @@
             experience.
           </p>
         </div>
-        <div class="mx-auto p-10" data-aos="flip-left" data-aos-delay="1000">
-          <img src="skill/python.webp" width="80px" class="mx-auto" />
-          <h2 class="font-bold mx-auto text-center text-3xl mt-4">Python</h2>
-          <p class="text-center mt-4">
+        <div
+          class="aspect-square flex flex-col items-center justify-center p-3"
+          data-aos="flip-left"
+          data-aos-delay="1000"
+        >
+          <img
+            src="skill/python.webp"
+            class="w-12 h-12 lg:w-20 lg:h-20 object-contain"
+          />
+          <h2
+            class="font-bold text-center text-sm md:text-base lg:text-2xl mt-3"
+          >
+            Python
+          </h2>
+          <p class="text-center mt-3 hidden lg:block text-sm">
             Python is a versatile language I use for backend logic, data
             analysis, and automation. Its clean and simple syntax makes it
             easier for me to understand advanced programming concepts and apply
             them effectively in projects.
           </p>
         </div>
-        <div class="mx-auto p-10" data-aos="flip-left" data-aos-delay="1200">
+        <div
+          class="aspect-square flex flex-col items-center justify-center p-3"
+          data-aos="flip-left"
+          data-aos-delay="1200"
+        >
           <img
             src="skill/tailwind-removebg-preview.webp"
-            width="80px"
             alt=""
-            class="mx-auto"
+            class="w-12 h-12 lg:w-20 lg:h-20 object-contain"
           />
-          <h2 class="font-bold mx-auto text-center text-3xl mt-4">
+          <h2
+            class="font-bold text-center text-sm md:text-base lg:text-2xl mt-3"
+          >
             TailwindCSS
           </h2>
-          <p class="text-center mt-4">
+          <p class="text-center mt-3 hidden lg:block text-sm">
             I love using Tailwind CSS because it makes designing fast,
             consistent, and flexible without writing too much custom CSS. With
             its utility-first classes, I can build responsive and aesthetic
@@ -282,7 +347,11 @@
       </div>
       <div class="bg-white flex flex-col rounded-t-2xl">
         <div class="m-3">
-          <img src="certificate/Farrel_Satya_Kurniawan_.png" class="rounded-t-2xl" alt="" />
+          <img
+            src="certificate/Farrel_Satya_Kurniawan_.png"
+            class="rounded-t-2xl"
+            alt=""
+          />
         </div>
         <div class="font-[Inter] text-2xl font-semibold m-3 text-center hove">
           Pelatihan Domain Radnet
